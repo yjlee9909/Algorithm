@@ -10,7 +10,7 @@ rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
     let result = "";
-    for (let i = 1; i <= input; i++) {
+    for (let i = 1; i <= input[0]; i++) {
         for(let j = 1; j <= i; j++) {
             result += "*";
         }
