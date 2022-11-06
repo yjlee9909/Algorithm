@@ -3,6 +3,9 @@ function solution(n) {
     // 6조각, 인원 사이의 공배수 push -> result
     // result[0] -> 최소공배수 (최소 피자 조각)
     // parseInt(result[0])/6 -> 최소 피자 판 개수
+    
+    // sol.1
+    
     let result = [];
     for (let i = 1; i <= n * 6; i++) {
         if (((i % 6) === 0) &&((i % n) === 0)) {
@@ -10,4 +13,11 @@ function solution(n) {
         }
     }
     return Math.ceil(parseInt(result[0])/6);
+    
+     // sol.2
+    // let pizza = 1;
+    // while ((pizza * 6) % n) {
+    //     pizza++;
+    // }
+    // return pizza;
 }
