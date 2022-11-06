@@ -1,5 +1,11 @@
 function solution(my_string) {
-    return my_string.replace(/[aeiou]/g, '');
+    // sol.1
+    // return my_string.replace(/[aeiou]/g, '');
+    
+    // sol.2
+    return Array.from(my_string)
+        .filter((t) => !["a", "e", "i", "o", "u"].includes(t))
+        .join("");
 }
 
 // 파이썬
