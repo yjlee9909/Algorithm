@@ -9,7 +9,10 @@ function solution(n) {
     // return sum;
     
     // sol.2
-    return n.toString().split('').map(v => +v).reduce((acc, cur) => acc + cur);
+    // return n.toString().split('').map(v => +v).reduce((acc, cur) => acc + cur);
+    
+    // sol.3
+    return n.toString().split('').reduce((acc, cur) => parseInt(acc) + parseInt(cur), 0);
     
 }
 
