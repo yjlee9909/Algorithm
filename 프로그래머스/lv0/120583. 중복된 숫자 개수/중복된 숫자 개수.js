@@ -9,7 +9,14 @@ function solution(array, n) {
     // return count;
     
     // sol.2
+    console.log(array.filter(v => v === n))
+    console.log(array)
     return array.filter(v => v === n).length;
+    
+    // sol.3
+    // answer = 0
+    // for (num of array) if (num === n) answer++
+    // return answer
 }
 
 // 파이썬 코드
