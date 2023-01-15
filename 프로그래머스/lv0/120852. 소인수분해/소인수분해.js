@@ -10,6 +10,5 @@ function solution(n) {
             i++;
         }
     }
-
     return [...new Set(answer.sort((a, b) => (a > b ? 1 : -1)))];
 }
