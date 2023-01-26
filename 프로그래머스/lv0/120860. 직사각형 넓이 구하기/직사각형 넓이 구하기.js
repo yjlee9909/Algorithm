@@ -1,8 +1,6 @@
 function solution(dots) {
-  const xDots = dots.flatMap(([x, y]) => x);
-  const yDots = dots.flatMap(([x, y]) => y);
-  const width = Math.max(...xDots) - Math.min(...xDots);
-  const height = Math.max(...yDots) - Math.min(...yDots);
-  return width * height;
+    const arr = dots.sort((a,b) => a[0] - b[0]);
+    const x =  arr[2][0] - arr[0][0];
+    const y = arr[3][1] - arr[2][1];
+    return Math.abs(x * y);
 }
-
