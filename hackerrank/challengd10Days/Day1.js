@@ -10,3 +10,8 @@ function getPerimeter(length, width) {
   perimeter = 2 * (length + width);
   return perimeter;
 }
+
+// Day 1: Functions
+function factorial(n) {
+  return n !== 1 ? n * factorial(n - 1) : 1;
+}
