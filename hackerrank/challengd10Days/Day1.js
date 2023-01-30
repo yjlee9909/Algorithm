@@ -15,3 +15,10 @@ function getPerimeter(length, width) {
 function factorial(n) {
   return n !== 1 ? n * factorial(n - 1) : 1;
 }
+
+// Day 1: Let and Const
+function main() {
+  const r = inputString[currentLine++];
+  console.log(Math.PI * r * r);
+  console.log(Math.PI * 2 * r);
+}
