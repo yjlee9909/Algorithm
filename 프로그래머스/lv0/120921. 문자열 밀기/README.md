@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 33.4 MB, 시간: 0.12 ms
+메모리: 33.6 MB, 시간: 3.25 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 문제 설명
 
-<p>문자열 "hello"에서 각 문자를 오른쪽으로 한 칸씩 밀고 마지막 문자는 맨 앞으로 이동시키면 "ohell"이 됩니다. 이것을 문자열을 민다고 정의한다면 문자열 <code>A</code>와 <code>B</code>가 매개변수로 주어질 때, <code>A</code>를 밀어서 <code>B</code>가 될 수 있다면 몇 번 밀어야 하는지 횟수를 return하고 밀어서 <code>B</code>가 될 수 없으면 -1을 return 하도록 solution 함수를 완성해보세요.</p>
+<p>문자열 "hello"에서 각 문자를 오른쪽으로 한 칸씩 밀고 마지막 문자는 맨 앞으로 이동시키면 "ohell"이 됩니다. 이것을 문자열을 민다고 정의한다면 문자열 <code>A</code>와 <code>B</code>가 매개변수로 주어질 때, <code>A</code>를 밀어서 <code>B</code>가 될 수 있다면 밀어야 하는 최소 횟수를 return하고 밀어서 <code>B</code>가 될 수 없으면 -1을 return 하도록 solution 함수를 완성해보세요.</p>
 
 <hr>
 
@@ -47,6 +47,16 @@
 <td>"elppa"</td>
 <td>-1</td>
 </tr>
+<tr>
+<td>"atat"</td>
+<td>"tata"</td>
+<td>1</td>
+</tr>
+<tr>
+<td>"abc"</td>
+<td>"abc"</td>
+<td>0</td>
+</tr>
 </tbody>
       </table>
 <hr>
@@ -63,6 +73,18 @@
 
 <ul>
 <li>"apple"은 몇 번을 밀어도 "elppa"가 될 수 없습니다.</li>
+</ul>
+
+<p>입출력 예 #3</p>
+
+<ul>
+<li>"atat"는 오른쪽으로 한 칸, 세 칸을 밀면 "tata"가 되므로 최소 횟수인 1을 반환합니다.</li>
+</ul>
+
+<p>입출력 예 #4</p>
+
+<ul>
+<li>"abc"는 밀지 않아도 "abc"이므로 0을 반환합니다.</li>
 </ul>
 
 
