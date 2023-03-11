@@ -1,6 +1,6 @@
 # [level 0] 중앙값 구하기 - 120811 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120811?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120811) 
 
 ### 성능 요약
 
