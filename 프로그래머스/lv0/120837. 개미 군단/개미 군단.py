@@ -1,7 +1,6 @@
 def solution(hp):
-    answer = hp // 5
-    hp = hp % 5
-    answer += hp // 3
-    hp = hp % 3
-    answer += hp // 1
-    return answer
+    general = hp // 5
+    soldier = (hp-(5*general))//3
+    normal = (hp-(5*general)-(3*soldier))//1
+    
+    return general+soldier+normal
