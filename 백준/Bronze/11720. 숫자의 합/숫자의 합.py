@@ -1,6 +1,6 @@
-N = int(input())
-s = str(input())
+N = input()
+numbers = list(input())
 sum = 0
-for i in range(N):
-    sum += int(s[i])
+for i in numbers:
+    sum += int(i)
 print(sum)
